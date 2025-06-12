@@ -10,7 +10,7 @@ services:
       - ./films.json:/app/films.json
       - ./stats.json:/app/stats.json
     environment:
-      - BOT_TOKEN=7916269766:AAEm9SfsmAgFDoh3C6GfMifdH0EYEH73oSk 
+      - BOT_TOKEN= 
     dns:
       - 8.8.8.8
       - 8.8.4.4
