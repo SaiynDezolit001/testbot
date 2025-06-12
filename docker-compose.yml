@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  film_bot:
+    build: .
+    container_name: film_bot
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./films.json:/app/films.json
+      - ./stats.json:/app/stats.json
+    environment:
+      - BOT_TOKEN=7916269766:AAEm9SfsmAgFDoh3C6GfMifdH0EYEH73oSk 
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
